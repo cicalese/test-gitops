@@ -1,0 +1,25 @@
+# Secrets live in K8s Secrets, not in this repo
+.env
+
+# Generated at runtime by Ansible
+.gitops-host
+.gitops-applied
+
+# Instance template files not needed in gitops
+_initdb/
+docker-compose*.yml
+my.cnf
+scripts/
+
+# Admin passwords
+admin-password_*
+
+# Transient config sync file
+values-configdata.yaml
+
+# Runtime data directories (backed by PVCs on K8s, not by git)
+images/
+extensions/
+skins/
+public_assets/
+wikis/
