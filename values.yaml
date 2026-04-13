@@ -137,6 +137,11 @@ configData:
       $wgGroupPermissions[''*''][''createaccount''] = false;
 
       '
+    settings--global--GlobalSettings.php: '<?php
+
+      $wgGroupPermissions["user"]["edit"] = false;
+
+      '
     settings--global--Vector.php: '<?php
 
       // Load the Vector skin and set it as the default.
